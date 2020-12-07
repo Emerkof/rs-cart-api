@@ -19,7 +19,8 @@ ENV NODE_ENV "production"
 RUN npm i
 COPY --from=build /build/dist /dist
 
-EXPOSE 4000:4000
+ENV PORT=8080
+EXPOSE 8080
 
 ENTRYPOINT ["node", "dist/main"]
 
