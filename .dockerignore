@@ -2,11 +2,12 @@ node_modules
 
 dist
 
+# Don't need tests in the container
 test
 
-nest-cli.*
-
+# Don't need dev tools in the container
 .eslint*
 .prettier*
 
+# Don't need README in the container
 README.md
